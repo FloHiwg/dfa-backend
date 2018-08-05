@@ -17,6 +17,9 @@ public class BoatController {
 
     Logger logger = LoggerFactory.getLogger(this.getClass());
 
+    @Autowired
+    private Configuration configuration;
+
     //Can be used to return port for testing and logging purposes
     @Autowired
     private Environment environment;
