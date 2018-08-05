@@ -24,7 +24,7 @@ public class BoatController {
     @Autowired
     private BoatRepository repository;
 
-    @GetMapping("/boat-service/id/{id}")
+    @GetMapping("/boat/id/{id}")
     public Boat retrieveBoatById(@PathVariable long id) {
         logger.info("Get boat with id: {}", id);
 
