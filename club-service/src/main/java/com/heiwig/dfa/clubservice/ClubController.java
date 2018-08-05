@@ -24,6 +24,9 @@ public class ClubController {
     @Autowired
     private ClubRepository repository;
 
+    @Autowired
+    private Configuration configuration;
+
     @GetMapping("/club/id/{id}")
     public Club retrieveClubById(@PathVariable long id) {
         logger.info("Get boat with id: {}", id);
